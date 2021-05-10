@@ -18,6 +18,8 @@
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
@@ -28,6 +30,7 @@
 
 <body>
   <header>
+    
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#"> <img src="images/icons/erning-01.png" alt="logo icon" class="logo_icon"> Mavcoin<span>exchange</span></a>
@@ -80,13 +83,16 @@
         <div class="row no-gutters">
           <div class="col-md-5 mx-auto">
             <div class="hero_content">
-              <h2 class="hero_title">The Simplest way of entering the crypto world is here!</h2>
+              <h2 class="hero_title" data-aos="fade-up-right" data-aos-delay="500"
+              data-aos-duration="1000">The Simplest way of entering the crypto world is here!</h2>
               <p>Buy Your gift card and redeem it to bitcoin. Let us help you access the crypto space.</p>
-              <a href="#" class="core_btn">Get Started</a>
+              <a href="#" class="core_btn" data-aos="fade-up-right" data-aos-delay="500"
+              data-aos-duration="2000">Get Started</a>
             </div>
           </div>
           <div class="col-md-7 mx-auto">
-            <div class="hero_img">
+            <div class="hero_img" data-aos="fade-up-right" data-aos-delay="500"
+            data-aos-duration="2100">
               <img src="/images/header-02.png" alt="">
             </div>
           </div>
@@ -97,41 +103,136 @@
   
 
   <main>
-    
-
-    <section class="section about_section">
+    <section class="about_section">
+      
       <div class="container">
-        <div class="chart_card">
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"></div>
-          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        <div class="about">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="content" data-aos="fade-up-right" data-aos-delay="500"
+              data-aos-duration="1000">
+                <h2 class="section_header" data-aos="fade-up-right" data-aos-delay="500"
+                data-aos-duration="1200">About Us</h2>
+                <p data-aos="fade-up-right" data-aos-delay="500"
+                data-aos-duration="1400">Artificial intelligence based on neural networks built using the newest algorithms for self-learning, analysis and compariso eurons in which will be self corrected, based on the history of success and failure, taking into account the correlation of the objects of analysis.</p>
+                <p>Due to the use of large computing power and artificial based on the neural network.</p>
+              </div>
+            </div>
+            <div class="col-md-6 mx-auto">
+              <img src="images/about-2-01.png" alt="" class="about_img" data-aos="fade-up-right" data-aos-delay="500"
+              data-aos-duration="1800">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
           {
-          "width": "100%",
-          "height": "350",
-          "defaultColumn": "overview",
-          "screener_type": "crypto_mkt",
-          "displayCurrency": "BTC",
-          "colorTheme": "light",
-          "locale": "in"
-        }
-          </script>
-        </div>
-        <!-- TradingView Widget END -->
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "BTC/USD"
+          },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "ETH/USD"
+          }
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "en"
+      }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section_header" data-aos="fade-up-right" data-aos-delay="500"
+        data-aos-duration="1000">How it works</h2>
+
+        <div class="works_section">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="steps">
+                <div class="step" data-aos="fade-up-right" data-aos-delay="500"
+                data-aos-duration="1300">
+                  <div class="step_img">
+                    <img src="images/icons/service-01.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h3>Buy your CGift card</h3>
+                    <p>Select the card value and the payment method of your choice.</p>
+                  </div>
+                </div>
+                <div class="step" data-aos="fade-up-right" data-aos-delay="500"
+                data-aos-duration="1500">
+                  <div class="step_img">
+                    <img src="images/icons/service-02.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h3>Track your purchase and redeem</h3>
+                    <p>Once the card is delivered to you via email, you can redeem it to Bitcoin.</p>
+                  </div>
+                </div>
+                <div class="step" data-aos="fade-up-right" data-aos-delay="500"
+                data-aos-duration="1900">
+                  <div class="step_img">
+                    <img src="images/icons/service-03.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h3>Track your assets</h3>
+                    <p>Track your assets in our Dashboard.</p>
+                  </div>
+                </div>
+
+                <div class=" text-center my-4">
+                  <a href="#" class="btn_core-main">Buy Now!!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mx-auto">
+              <div class="step_img">
+                <img src="images/about-2-02.png" alt="" data-aos="fade-up-right" data-aos-delay="500"
+                data-aos-duration="2000">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section works_section">
+    <section class="pricing_chart" data-aos="fade-up-right" data-aos-delay="500"
+    data-aos-duration="1000">
       <div class="container">
-        <h2 class="section_header">How it works</h2>
-      </div>
-    </section>
+        <h2 class="section_header" data-aos="fade-up-right" data-aos-delay="500"
+        data-aos-duration="1700">Pricing charts</h2>
 
-    <section class="section pricing_chart">
-      <div class="container">
-        <h2 class="section_header">Pricing charts</h2>
+        <div class="chart_card" data-aos="fade-up-right" data-aos-delay="500"
+        data-aos-duration="2000">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+            {
+            "width": "100%",
+            "height": "350",
+            "defaultColumn": "overview",
+            "screener_type": "crypto_mkt",
+            "displayCurrency": "BTC",
+            "colorTheme": "light",
+            "locale": "in"
+          }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+          </div>
       </div>
     </section>
 
@@ -142,7 +243,7 @@
       </div>
     </section>
 
-    <section class="section section_feature">
+    <section class="section tes_section">
       <div class="container">
         <h4 class="slogan">Testimonial</h4>
         <h2 class="section_header">Meet Client Satisfaction</h2>
@@ -157,7 +258,7 @@
 
     <footer>
       <div class="container">
-        <h2 class="section_header">Frequently Asked Questions</h2>
+        <h2 class="section_header">Footer</h2>
 
         <div class="footer">
           <p>Copyright © 2021 Designed By ReactAvacado 🥑🥑🥑</p>
@@ -185,6 +286,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </script>
 <!--Start of Tawk.to Script-->
 <!-- <script type="text/javascript">

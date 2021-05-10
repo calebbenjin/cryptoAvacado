@@ -100,7 +100,7 @@ h4 {
 }
 
 .section {
-  margin-top: 2rem;
+  margin: 4rem auto;
 }
 
 @media screen and (min-width: 992px) {
@@ -121,6 +121,9 @@ h4 {
 
 .section_header {
   font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 6rem;
 }
 
 header {
@@ -168,11 +171,27 @@ header {
   background: var(--secondaryColor)!important;
 }
 
+.pricing_chart {
+  position: relative;
+  background: url(../images/priceing-chats-bg-shpe.png) no-repeat 100% 100%;
+  content: "";
+  height: 70%;
+  width: 100%;
+  left: 0;
+  /* margin: 10rem 0; */
+  /* bottom: 50%; */
+  /* transform: translateY(20%); */
+}
+
 .chart_card {
   height: 400px;
+  width: 70%;
+    margin: 0 auto;
   padding: 20px;
   box-shadow: var(--dark-shadow);
   object-fit: cover;
+  z-index: 9;
+  background: #fff;
 }
 
 .tradingview-widget-container {
@@ -188,11 +207,11 @@ header {
 }
 
 .hero_section {
-  padding: 7rem 0;
+  padding: 3rem 0;
 }
 
 .hero_content {
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 
 .hero_img {
@@ -223,6 +242,50 @@ header {
   margin-top: 3rem;
 }
 
+.about {
+  margin-top: 6rem;
+}
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
+.step img {
+  width: 40px;
+}
+.step .step_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--dark-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step .content {
+  width: 70%;
+}
+
+.step h3 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.btn_core-main {
+  background: var(--secondaryColor);
+  color: #fff;
+  padding: 15px 4rem;
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 
 @media screen and (max-width: 768px) {
   .hero_content p {
@@ -232,7 +295,7 @@ header {
   }
 
   .hero_content {
-    padding-top: 1rem;
+    padding-top: 4rem;
   }
   
   .hero_img {
@@ -253,6 +316,43 @@ header {
     padding: 0;
     box-shadow: none;
     object-fit: cover;
+  }
+
+  .step img {
+    width: 30px;
+  }
+
+  .step .step_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: var(--dark-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing_chart {
+    background: none;
+  }
+  
+  .chart_card {
+    height: 400px;
+    width: 100%;
+      margin: 0 auto;
+    padding: 20px;
+    box-shadow: var(--dark-shadow);
+    object-fit: cover;
+    z-index: 9;
+    background: #fff;
+  }
+
+  .section_header {
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
 }
