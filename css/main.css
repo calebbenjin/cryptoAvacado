@@ -94,18 +94,19 @@ h4 {
 /* section */
 .section,
 .container {
-  width: 85vw;
+  width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
 }
 
 .section {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 992px) {
   .section {
     width: 95vw;
+    margin-top: 5rem;
   }
 }
 
@@ -245,6 +246,13 @@ header {
     color: var(--secondaryColor);
     font-weight: 700;
     font-size: 1.1rem;
+  }
+
+  .chart_card {
+    height: 400px;
+    padding: 0;
+    box-shadow: none;
+    object-fit: cover;
   }
 
 }
