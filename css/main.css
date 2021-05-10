@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primaryColor: #d11515;
+  --primaryColor: #fba350;
   --secondaryColor: #562ad9;;
   --greyColor:  #f8f8f8ee;
   --whiteColor: #fdfdfdee;
@@ -144,12 +144,27 @@ header {
 
 .navbar a {
   color: #eee;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .navbar .fa-bars {
   color: #eee;
   font-size: 1.4rem;
+}
+
+.logo_icon {
+  width: 20px;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.navbar-brand span{
+  color: var(--primaryColor);
+}
+
+.dropdown-menu {
+  background: var(--secondaryColor)!important;
 }
 
 .core_btn {
