@@ -19,7 +19,7 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
@@ -31,53 +31,79 @@
 <body>
   <header>
     
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#"> <img src="images/icons/erning-01.png" alt="logo icon" class="logo_icon"> Mavcoin<span>exchange</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Buy Git Card <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buy Bitcoin</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              For Customers
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Explore Gift Card</a>
-              <a class="dropdown-item" href="#">Explore Bitcoin</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Pricing</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Company
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">About us</a>
-              <a class="dropdown-item" href="#">Partner</a>
-              <a class="dropdown-item" href="#">Real Gift</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">INvestors Relation</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Faq</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a href="#" class="core_btn">Buy Gift Card 🌅</a>
-        </span>
+    <div class="nav-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"> <img src="images/icons/erning-01.png" alt="logo icon" class="logo_icon"> Mavcoin<span>exchange</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Buy Git Card <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buy Bitcoin</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                For Customers
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Explore Gift Card</a>
+                <a class="dropdown-item" href="#">Explore Bitcoin</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Pricing</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Company
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About us</a>
+                <a class="dropdown-item" href="#">Partner</a>
+                <a class="dropdown-item" href="#">Real Gift</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">INvestors Relation</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faq</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="#" class="core_btn">Buy Gift Card 🌅</a>
+          </span>
+        </div>
+        </div>
+      </nav>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "BTC/USD"
+          },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "ETH/USD"
+          }
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "en"
+      }
+        </script>
       </div>
-      </div>
-    </nav>
+      <!-- TradingView Widget END -->
+    </div>
     <section class="hero_section">
       <div class="container">
         <div class="row no-gutters">
@@ -125,30 +151,7 @@
           </div>
         </div>
       </div>
-      <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-        {
-        "symbols": [
-          {
-            "proName": "BITSTAMP:BTCUSD",
-            "title": "BTC/USD"
-          },
-          {
-            "proName": "BITSTAMP:ETHUSD",
-            "title": "ETH/USD"
-          }
-        ],
-        "showSymbolLogo": true,
-        "colorTheme": "light",
-        "isTransparent": false,
-        "displayMode": "adaptive",
-        "locale": "en"
-      }
-        </script>
-      </div>
-      <!-- TradingView Widget END -->
+      
     </section>
 
     <section class="section">
@@ -238,8 +241,45 @@
 
     <section class="section feature_section">
       <div class="container">
-        <h4 class="slogan">QUALITY FEATURES</h4>
         <h2 class="section_header">Amazing useful features</h2>
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <div class="card">
+              <div class="icon">
+                <img src="images/icons/icon1.svg" alt="">
+              </div>
+              <div class="content">
+                <h4 class="title">Simple</h4>
+                <p>Buy your gift card with your favorite payment method, send it to yourself or to a recipient of your choice.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <div class="card">
+              <div class="icon">
+                <img src="images/icons/icon2.svg" alt="">
+              </div>
+              <div class="content">
+                <h4 class="title">Fast & Reliable</h4>
+                <p>Redeem the gift card to Bitcoin and watch your assets develop.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <div class="card">
+              <div class="icon">
+                <img src="images/icons/icon3.svg" alt="">
+              </div>
+              <div class="content">
+                <h4 class="title">Secure & Transparent</h4>
+                <p>The delivery and the redemption of the gift cards are fully compliant and secure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center btn_container">
+          <a href="#" class="btn_core-main">Buy Now!!</a>
+        </div>
       </div>
     </section>
 
