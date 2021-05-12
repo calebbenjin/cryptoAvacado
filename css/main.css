@@ -7,8 +7,8 @@
 }
 
 :root {
-  --primaryColor: #fba350;
-  --secondaryColor: #562ad9;
+  --primaryColor: #e03f16;
+  --secondaryColor: #4bd613;
   --greyColor:  #f8f8f8ee;
   --whiteColor: #fdfdfdee;
   --ff-primary: 'Montserrat', sans-serif;
@@ -132,7 +132,7 @@ h4 {
 
 header {
   position: relative;
-  background: url(../images/bg-img/banner-02.png) no-repeat 100% 100%;
+  background: url(../images/bg-img/Banner01.png) no-repeat 100% 100%;
   background-size: cover;
   content: "";
   height: 100%;
@@ -297,14 +297,14 @@ header {
   text-align: center;
   padding: 2rem 4rem;
   border-radius: 5px;
-  background: linear-gradient(118deg, rgb(5, 23, 141) 20%, rgb(57, 15, 172) 66%);
+  background: var(--secondaryColor);
   color: #fff;
   height: 330px;
   transition: var(--transition);
   margin-bottom: 2rem;
 }
 .card:hover {
-  background: linear-gradient(118deg, rgb(18, 41, 195) 20%, rgb(50, 13, 153) 66%);
+  background: var(--secondaryColor);
   box-shadow: var(--dark-shadow);
 }
 .card .title {
@@ -338,7 +338,7 @@ header {
   margin-bottom: 2rem;
 }
 .tes_card .rating .tick {
-  color: #e03f16;
+  color: var(--primaryColor);
 }
 
 .tes_card .content .tes_title {
@@ -356,7 +356,7 @@ header {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: solid 2px #e03f16;
+  border: solid 2px var(--primaryColor);
   margin-right: 1rem;
 }
 
@@ -370,7 +370,7 @@ header {
   font-size: 1rem;
 }
 .tes_card .tes_user p {
-  color: #e03f16;
+  color: var(--primaryColor);
 }
 
 .choose_cards {
