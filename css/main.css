@@ -142,10 +142,6 @@ header {
   z-index: 2;
 }
 
-.navbar {
-  
-}
-
 .nav-header {
   position: fixed;
   width: 100%;
@@ -165,7 +161,7 @@ header {
 }
 
 .logo_icon {
-  width: 20px;
+  width: 200px;
 }
 .navbar-brand {
   font-weight: 700;
@@ -295,10 +291,10 @@ header {
 
 .card {
   text-align: center;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   border-radius: 5px;
-  background: var(--secondaryColor);
-  color: #fff;
+  background: #015705;
+  color: #333;
   height: 330px;
   transition: var(--transition);
   margin-bottom: 2rem;
@@ -432,7 +428,7 @@ footer {
 }
 
 footer .logo_icon {
-  width: 35px;
+  width: 220px;
 }
 
 .footer_logo {
@@ -450,6 +446,10 @@ footer .logo_icon {
 
   .hero_content {
     padding-top: 8rem;
+  }
+
+  .logo_icon {
+    width: 150px;
   }
   
   .hero_img {
