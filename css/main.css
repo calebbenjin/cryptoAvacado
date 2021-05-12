@@ -444,7 +444,7 @@ footer .logo_icon {
 @media screen and (max-width: 768px) {
   .hero_content p {
     font-size: 1.2rem;
-    color: #ccc;
+    color: #fff;
     margin-bottom: 2rem;
   }
 
