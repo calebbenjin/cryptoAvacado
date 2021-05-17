@@ -135,6 +135,15 @@ h4 {
   text-align: center;
 }
 
+.logo_list {
+  margin-bottom: 3rem;
+}
+
+.hero_logoimg {
+  width: 80px;
+  margin-right: 1rem;
+}
+
 header {
   position: relative;
   background: url(../images/bg-img/Banner01.png) no-repeat 100% 100%;
@@ -229,7 +238,7 @@ header {
 .hero_content p {
   font-size: 1.2rem;
   color: #fff;
-  margin: 3rem 0;
+  margin: 1.3rem 0;
 }
 
 .hero_content .core_btn {
